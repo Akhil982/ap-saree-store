@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /ap-saree-store
+
+sms:
+  gateway:
+    api-key: Bm7G6zho0bkjlHWgK5FNpV9UTu2y4qQiXseMZPrISfx3dLCOt11pZqKe8lIkM9jUSWhHXoywRsEd3g6F
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: akhil.chinni.24@gmail.com
+    password: qfup jker jksz cubi
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

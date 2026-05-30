@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ap-saree-store
+  profiles:
+    active: vercel
