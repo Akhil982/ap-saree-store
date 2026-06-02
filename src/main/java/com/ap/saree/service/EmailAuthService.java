@@ -20,11 +20,14 @@ public class EmailAuthService {
         try {
             SimpleMailMessage message = new SimpleMailMessage();
 
+            // 💡 CRITICAL FIX: Explicitly set the authenticated Brevo sender identity
+            message.setFrom("akhil.chinni.24@gmail.com");
+
             message.setTo(targetEmail);
             message.setSubject("⚜️ JAABILI SAREE STORE - Your Secure Access Code");
 
             String layoutBody = """
-                Welcome to Hosue Of Jaabili.
+                Welcome to House Of Jaabili.
                 
                 Your luxury portal authentication verification passcode is: %s
                 
