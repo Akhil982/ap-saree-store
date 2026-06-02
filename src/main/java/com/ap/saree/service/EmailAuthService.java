@@ -21,17 +21,17 @@ public class EmailAuthService {
             SimpleMailMessage message = new SimpleMailMessage();
 
             message.setTo(targetEmail);
-            message.setSubject("⚜️ AP SAREE STORE - Your Secure Access Code");
+            message.setSubject("⚜️ JAABILI SAREE STORE - Your Secure Access Code");
 
             String layoutBody = """
-                Welcome to AP STORE.
+                Welcome to Hosue Of Jaabili.
                 
                 Your luxury portal authentication verification passcode is: %s
                 
                 This credential sequence remains active for 5 minutes. If you did not request this code, please disregard this email.
                 
                 Regards,
-                The AP Store Dev Engine Team
+                The Jaabili Store Dev Engine Team
                 """.formatted(otpCode);
 
             message.setText(layoutBody);
