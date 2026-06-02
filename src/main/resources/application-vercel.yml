@@ -10,7 +10,7 @@ sms:
 spring:
   mail:
     host: smtp-relay.brevo.com
-    port: 587                             # ? Try 587 first. If Render blocks it, change this to 2525
+    port: 2525                             # ? Try 587 first. If Render blocks it, change this to 2525
     username: ad4ba6001@smtp-brevo.com    # Your exact Brevo login string
     password: xsmtpsib-441120d90ff9fdf83f41850ec387ce16b0e350749515f75b4ef324112ce14c28-EyXeW7y9Fk7INS8e # ? Paste the secret key you just copied
     protocol: smtp
