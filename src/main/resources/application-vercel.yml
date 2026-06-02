@@ -9,24 +9,19 @@ sms:
 
 spring:
   mail:
-    host: smtp.gmail.com
-    port: 465
-    username: akhil.chinni.24@gmail.com
-    password: qfup jker jksz cubi
+    host: smtp-relay.brevo.com
+    port: 587                             # ? Try 587 first. If Render blocks it, change this to 2525
+    username: ad4ba6001@smtp-brevo.com    # Your exact Brevo login string
+    password: xsmtpsib-441120d90ff9fdf83f41850ec387ce16b0e350749515f75b4ef324112ce14c28-EyXeW7y9Fk7INS8e # ? Paste the secret key you just copied
     protocol: smtp
     properties:
       mail:
         smtp:
           auth: true
-          ssl:
-            enable: true
           starttls:
-            enable: false
-            required: false
-          socketFactory:
-            port: 465
-            class: javax.net.ssl.SSLSocketFactory
-            fallback: false
-          connectiontimeout: 5000
-          timeout: 5000
-          writetimeout: 5000
+            enable: true                  # Brevo requires STARTTLS for port 587
+            required: true
+          # Safe timeout rules so your app never freezes up
+          connectiontimeout: 10000
+          timeout: 10000
+          writetimeout: 10000
