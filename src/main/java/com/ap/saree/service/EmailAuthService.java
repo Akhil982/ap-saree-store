@@ -24,7 +24,7 @@ public class EmailAuthService {
             message.setFrom("akhil.chinni.24@gmail.com");
 
             message.setTo(targetEmail);
-            message.setSubject("⚜️ JAABILI SAREE STORE - Your Secure Access Code");
+            message.setSubject("⚜️ HOUSE OF JAABILI SAREE STORE - Your Secure Access Code");
 
             String layoutBody = """
                 Welcome to House Of Jaabili.
