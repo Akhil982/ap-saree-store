@@ -25,3 +25,20 @@ spring:
           connectiontimeout: 10000
           timeout: 10000
           writetimeout: 10000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    generate-ddl: true
+
+  datasource:
+    url: jdbc:postgresql://db.prisma.io:5432/postgres?sslmode=require
+    username: b79b5e5ffb18c890540a05211005856f42d0eea29d57b458888e037032213e42
+    password: sk_xLUea_DsQp2CfiST63eeq
+    driver-class-name: org.postgresql.Driver
+
+  sql:
+    init:
+      mode: always
